@@ -1,0 +1,142 @@
+Task: Remon Romany Genius - Strategic Development
+Phase 0: Critical Fixes ✅ COMPLETE
+ Fix Google Gemini API Issue
+ Diagnosed root cause (SDK v1beta incompatibility)
+ Created diagnostic tools
+ Tested multiple API keys
+ Decision: Set Groq as default instead of fixing Google
+ Update UI to recommend Groq for free users
+ Reordered dropdown menu (Groq first, then Claude, then Gemini)
+ Added visual badges (FREE ⚡, FREE, BETA)
+Phase 1: Foundation (Week 1) - IN PROGRESS
+Database Integration ✅ COMPLETE
+ Setup SQLite database
+ Create database schema (quotas, conversations, messages)
+ Initialize database with script
+ Configure Drizzle ORM
+Smart Quota Management ✅ COMPLETE
+ QuotaManager class with auto-switching
+ Track usage per provider
+ Daily reset mechanism
+ API route for quota status
+ Real-time progress bars in UI (QuotaDisplay)
+ Integration with chat message sending
+ Test quota auto-switching
+ Add in-memory caching (from Logic-Flow)
+AI Chat Interface
+ Basic chat interface with message display
+ Model selector dropdown
+ Image upload support
+ Message streaming (SSE)
+ Code syntax highlighting
+ Chat history persistence to database
+ Load previous conversations
+UI/UX Enhancements
+ Dark/Light theme toggle
+ Responsive design
+ Navy blue glassmorphism effects
+ Toast notifications
+ Loading states and skeletons
+Phase 2: WordPress Doctor 🎯 (Week 2)
+File Upload System
+ ZIP upload component with drag & drop
+ File validation (max size, type)
+ Theme/Plugin detection from ZIP structure
+ Extract and parse files
+Analysis Engine
+ Security scanner
+ SQL injection detection
+ XSS vulnerability check
+ Nonce verification
+ File permission check
+ Performance analyzer
+ Database query optimization
+ Asset optimization check
+ Caching implementation
+ Code quality checker
+ WordPress coding standards
+ Deprecated function detection
+ Best practices validation
+Results Dashboard
+ Score cards (Security, Performance, Code Quality)
+ Visual reports with charts
+ Issues list with severity badges
+ Code snippets with line numbers
+ Suggested fixes with AI recommendations
+ Export report as PDF
+Database Schema
+ wp_projects table
+ wp_issues table
+ Analysis types enum
+Phase 3: Multi-language (Week 3)
+i18n Setup
+ Install i18next
+ Configure language detection
+ Setup translation files structure
+ Language switcher component
+Translations
+ Arabic (RTL)
+ UI translations
+ RTL layout adjustments
+ Arabic font support
+ English (default)
+ German
+ French
+ Spanish
+RTL Support
+ Mirror layouts for RTL
+ Flip directional icons
+ Test all components in RTL
+Phase 4: IDE Mode (Week 4)
+Monaco Editor Integration
+ Install Monaco Editor
+ Configure for multiple languages
+ Syntax highlighting
+ Line numbers and minimap
+File System
+ File tree component
+ Create/delete files and folders
+ File icons by type
+ Search in files
+Editor Features
+ Multiple tabs support
+ Split view (horizontal/vertical)
+ AI code completion
+ Find and replace
+AI Assistant Panel
+ Collapsible right panel
+ Code suggestions
+ Explain code feature
+ Refactor suggestions
+Phase 5: Advanced Features (Week 5-6)
+Image AI
+ DALL-E 3 integration
+ Stable Diffusion integration
+ Image generation UI
+ Image gallery with thumbnails
+ Download functionality
+ Prompt history
+Elementor Generator
+ Template generation from prompts
+ Widget library support
+ JSON export
+ Live preview
+ Template customization
+Payment System
+ Stripe integration
+ Wallet system
+ Pricing tiers (Free/Pro/Enterprise)
+ Cost display per request
+ Transaction history
+ Invoice generation
+Phase 6: Future Features (Backlog)
+ Video AI Studio
+ 50+ AI Models integration
+ AI Designer System
+ Real-time Collaboration
+ Built-in Hosting
+ AI Project Manager
+ Advanced Image Editing
+ Text-to-Video
+ AI Avatar Generation
+ Persistent Memory System
